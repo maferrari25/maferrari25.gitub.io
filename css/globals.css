@@ -13,6 +13,13 @@
   body {
     font-size: 1.6rem;
     margin-top: 15rem;
+    background-color: #fafafa;
+    color: #555;
+
+    .dark-mode {
+      background-color: #212529;
+      color: #899095;
+    }
   }
   
   ul {
@@ -22,6 +29,24 @@
   a {
     text-decoration: none;
     color: inherit;
+
+  }
+
+  a:hover {
+    color: #ec5840;
+  }
+
+  body.dark-mode {
+    background-color: #212529;
+    color: #899095;
+  }
+
+  .dark-mode a {
+    color: #dee2e6;
+  }
+
+  .dark-mode a:hover {
+    color: #3cc368;
   }
   
   h1 {
@@ -78,6 +103,28 @@
     margin: 0 auto;
     margin-bottom: 26rem;
   }
+
+  .min-width {
+    width: 100%;
+    padding: 0 4rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  .style-container {
+    background-color: var(--backgroun-color-padrao);
+    padding: 2rem;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-bottom: .5rem;
+}
   
   .mb-0 {
     margin-bottom: 0;

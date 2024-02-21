@@ -1,6 +1,7 @@
 .projects {
     margin-bottom: 16rem;
     scroll-margin-top: 15rem;
+    background-color: var(--white);
 }
 
 .projects .projects__content {
@@ -42,6 +43,14 @@
 .projects ul li .projects__info a {
     font-weight: 500;
     text-decoration: underline;
+}
+
+.projects .projects_color_title {
+    color: var(--secondary-color);
+}
+
+.projects .projects_color_text {
+    color: var(--text-color);
 }
 
 @media only screen and (max-width: 768px) {

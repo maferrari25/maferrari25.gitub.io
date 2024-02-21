@@ -6,3 +6,6 @@
 @import './components/skills.css';
 @import './components/projects.css';
 @import './components/footer.css';
+@import './components/body.css';
+@import './components/toggle.css';
+@import './components/floating.css';

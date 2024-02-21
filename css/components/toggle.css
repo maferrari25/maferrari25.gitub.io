@@ -1,0 +1,99 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    left: 10px;
+    bottom: 17px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+  .slider {
+    width:70px;
+    height:34px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:after {
+    content: "";
+    width:26px;
+    height: 26px;
+    position: absolute;
+    bottom: 4px;
+    left:4px;
+    background: linear-gradient(180deg,#ffcc89,#d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  }
+  
+  input:checked + .slider {
+    background-color: #242424;;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #040404;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  input:checked + .slider:after {
+    left:65px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+  } 
+
+  label svg {
+    position: absolute;
+    width: 22px;
+    top:26px;
+    z-index: 100;
+  }
+  label svg.sun {
+    left:6px;
+    fill:#fff;
+    transition: 0.3s;
+  }
+  label svg.moon {
+    left:41px;
+    fill:#7e7e7e;
+    transition: 0.3s;
+  }
+  input:checked + label svg.sun {
+    fill:#7e7e7e;
+  }
+  input:checked + label svg.moon {
+    fill:#fff;
+  }
+  
+  .slider .slider:after {
+    transition: 0.3s
+  }
+
+  .slider:active:after{ 
+    width: 55px; 
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

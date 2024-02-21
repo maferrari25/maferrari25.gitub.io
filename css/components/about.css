@@ -1,17 +1,33 @@
 .about {
     display: flex;
-    justify-content: space-between;
     gap: 4rem;
     scroll-margin-top: 20rem;
+    background-color: var(--light-tertiary-color);
 }
 
 .about .about__left {
-    max-width: 40rem;
-    flex: 1;
+    max-width: auto;
+    justify-items: center;
+    text-align: center;  
+}
+
+
+.about .about__left h2 {
+   font-size: 3rem;
+    font-weight: 500;
+    margin: 2rem 0 1;
+}
+
+.about .about_textAlign {
+   padding: 3rem 4rem;
+    text-align: center;
+    color: var(--secondary-color);
 }
 
 .about .about__left p {
    margin: 1rem 0 2rem;
+   font-size: 2rem;
+   color: var(--text-color);
 }
 
 .about .about__left ul {
@@ -25,11 +41,6 @@
  .about .about__left ul li a {
     display: inline-block;
     padding: 1rem;
- }
-
- .about .about__right {
-    flex: 1;
-    max-width: 66rem;
  }
 
  @media only screen and (max-width: 768px) {

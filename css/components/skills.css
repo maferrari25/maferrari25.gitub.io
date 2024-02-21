@@ -12,8 +12,8 @@
 .skills .skills__content .description{
     max-width: 56rem;
     margin: 0 auto 6rem;
+    color: var(--text-color);
 }
-
 
 .skills .skills__content ul {
     display: grid;
@@ -21,8 +21,15 @@
     gap: 2rem;
 }
 
+
+.skills .skills_color_title {
+    color: var(--secondary-color);
+    font-size: 4rem;
+}
+
+
 .skills .skills__content ul li .image-container {
-    background-color: var(--white);
+    background-color: var(--navbar-color);
     padding: 2rem;
     border-radius: 50%;
     width: 7rem;
@@ -32,7 +39,9 @@
     align-items: center;
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+    margin-bottom: 2rem;
 }
+
 
 .skills .skills__content ul li h3 {
     font-size: 1.6rem;
