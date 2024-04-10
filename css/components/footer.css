@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--footer-especify);
+    background-color: var(--light-tertiary-color);
 }
 
 footer .footer__content {

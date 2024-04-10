@@ -1,13 +1,15 @@
 .projects {
-    margin-bottom: 16rem;
     scroll-margin-top: 15rem;
-    background-color: var(--white);
+    background-color: var(--light-tertiary-color);
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 .projects .projects__content {
     max-width: 56rem;
     text-align: center;
     margin: 0 auto 6rem;
+
 }
 
 .projects ul li {
@@ -66,4 +68,5 @@
     .projects ul li .image img {
         min-width: auto;
     }
+
 }

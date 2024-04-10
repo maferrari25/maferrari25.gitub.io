@@ -1,10 +1,12 @@
+.toggle {
+  padding-bottom: 50px;
+}
+
 .switch {
     position: relative;
     display: inline-block;
     width: 100px;
     height: 34px;
-    left: 10px;
-    bottom: 17px;
   }
   
   .switch input { 
